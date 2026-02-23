@@ -28,7 +28,8 @@ public class Main
 
         Predicate<City> predicate = new CityBelongsToTheState("Castilla y León").and(new CityHasPopulationGreaterThanPredicate(75000));
 
-        UseCase useCase = new UseCase("7edc0db8f107b458113d5b0a7faa2c07");
+
+        UseCase useCase = new UseCase("AQUI_ESTARIA_LA_API_KEY"); //En este parametro se deberia introducir una API Key de OpenWeatherMap.
 
         JsonParser jsonbParser = new JsonbParser();
         NdjsonIO ndjsonBIO = new NdjsonIOImpl(jsonbParser);
